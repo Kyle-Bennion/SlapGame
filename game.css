@@ -1,0 +1,16 @@
+body { 
+  min-height: 100vh; display: flex; flex-direction: column; 
+}
+
+
+  header{ 
+} 
+
+
+main{
+  flex-grow: 1;} 
+
+
+  footer{ 
+
+}
