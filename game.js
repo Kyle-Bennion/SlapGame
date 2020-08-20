@@ -14,12 +14,13 @@ let toons = [
     health: 130,
     targetName: "Genghis Khan",
     hits: 0,
-    img:
+    img: 'GenghisKhan.PNG'
   },
   {
     health: 100,
     targetName: "Vlad the Impaler",
     hits: 0,
+    img: 'Vlad.jpeg'
   }
 ]
 
