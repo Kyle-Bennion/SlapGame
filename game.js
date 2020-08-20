@@ -1,5 +1,5 @@
 var target = {
-  health: 100,
+  health: 150,
   targetName: "Ben",
   hits: 0,
   items: [],
@@ -45,6 +45,8 @@ function slap() {
   zeroCheck();
   healthDisplay(target.health);
   displayHits(target.hits);
+  targetKO()
+
 }
 
 function healthDisplay(health) {
@@ -65,6 +67,8 @@ function punch() {
 
   healthDisplay(target.health);
   displayHits(target.hits);
+  targetKO()
+
 }
 
 function kick() {
@@ -75,6 +79,7 @@ function kick() {
 
   healthDisplay(target.health);
   displayHits(target.hits);
+  targetKO()
 }
 
 function zeroCheck() {
@@ -82,6 +87,28 @@ function zeroCheck() {
     target.health = 0;
   }
 }
+
+
+function targetKO() {
+  let elem = document.getElementById('knockOut')
+  if (target.health == 0) {
+    elem.innerHTML = 'Attilla The Hun is K.O!!!'
+  }
+  else {
+    elem.innerHTML = 'Attilla The Hun'
+  }
+}
+
+function reset() {
+  target.health = 150;
+  target.hits = 0;
+  target.items = [];
+
+  healthDisplay(target.health);
+  displayHits(target.hits);
+  targetKO()
+}
+
 
 // let attilla = {
 //   health: 140,
